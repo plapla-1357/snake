@@ -40,7 +40,15 @@ while running:
                     game.serpent.tourner(0,-1)
                 elif event.key == pygame.K_DOWN:    # fleche bas
                     game.serpent.tourner(0,1) 
-    
+                elif event.key == pygame.K_q:   # fleche gauche
+                    game.serpent.tourner(-1,0)
+                elif event.key == pygame.K_d:# fleche droite
+                    game.serpent.tourner(1,0)
+                elif event.key == pygame.K_z:  # fleche haut
+                    game.serpent.tourner(0,-1)
+                elif event.key == pygame.K_s:    # fleche bas
+                    game.serpent.tourner(0,1)
+
     else:
         print("ok")
         game = Game()

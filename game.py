@@ -5,7 +5,7 @@ import random
 
 
 class Game: 
-    def __init__(self,taille = 20, taille_carre = 30, color_carre = (255,255,255), nb_apple = 10):
+    def __init__(self,taille = 15, taille_carre = 30, color_carre = (255,255,255), nb_apple = 5):
         """create the game
 
         Args:
@@ -32,6 +32,9 @@ class Game:
         self.point = 0 
         for i in range(nb_apple):
             self.create_apple()
+            
+            
+            
 
 
     
